@@ -1,0 +1,33 @@
+import React from 'react';
+import { Box, Text, Spacer, Heading } from '@chakra-ui/react';
+
+const IntroComponent = () => {
+  return (
+    <Box maxW={'container.sm'}>
+      <Heading
+        fontSize={20}
+        variant="section-title"
+        textDecorationLine={'underline'}
+        textDecorationColor={'#525252'}
+        textDecorationThickness={3}
+        textUnderlineOffset={5}
+        mb={2}
+      >
+        Intro
+      </Heading>
+      <Box>
+        I am Dicky, working as a full-stack developer in Hong Kong. Graduated
+        from Engineering School in 2017, I worked for several companies in
+        different industries. Starting from C#, I develop my skills in web
+        development, including MERN Stack (MongoDB, Express.js, React.js,
+        node.js).
+      </Box>
+      <Spacer />
+      <Text>
+        Apart from programming, Soccer and Guitar are always my favorite. I am
+        an otaku in Japanese Drama and Japnese Music, especially JRock.
+      </Text>
+    </Box>
+  );
+};
+export default IntroComponent;
