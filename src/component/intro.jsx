@@ -1,9 +1,9 @@
 import React from 'react';
-import { Box, Text, Spacer, Heading } from '@chakra-ui/react';
+import { Text, Spacer, Heading, Container } from '@chakra-ui/react';
 
 const IntroComponent = () => {
   return (
-    <Box maxW={'container.sm'}>
+    <Container>
       <Heading
         fontSize={20}
         variant="section-title"
@@ -15,19 +15,19 @@ const IntroComponent = () => {
       >
         Intro
       </Heading>
-      <Box>
+      <Text>
         I am Dicky, working as a full-stack developer in Hong Kong. Graduated
         from Engineering School in 2017, I worked for several companies in
         different industries. Starting from C#, I develop my skills in web
         development, including MERN Stack (MongoDB, Express.js, React.js,
         node.js).
-      </Box>
+      </Text>
       <Spacer />
       <Text>
         Apart from programming, Soccer and Guitar are always my favorite. I am
         an otaku in Japanese Drama and Japnese Music, especially JRock.
       </Text>
-    </Box>
+    </Container>
   );
 };
 export default IntroComponent;

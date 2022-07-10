@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Heading } from '@chakra-ui/react';
+import { Box, Container, Heading } from '@chakra-ui/react';
 import styled from '@emotion/styled';
 
 const BioYear = styled(Box)`
@@ -13,7 +13,7 @@ const BioSection = styled(Box)`
 
 const BioComponent = () => {
   return (
-    <Box maxW={'container.sm'} float={'left'}>
+    <Container >
       <Heading
         as="h5"
         fontSize={20}
@@ -53,7 +53,7 @@ const BioComponent = () => {
           <Box>Worked as <strong>Full Stack Developer</strong> in Arwin Technology Limited</Box>
         </BioSection>
       </Box>
-    </Box>
+    </Container>
   );
 };
 export default BioComponent;

@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Navbar from './component/navbar';
 import HomePage from './page/home';
+import NotFoundPage from './page/not-found';
 import PaymentPage from './page/payment';
 import ResultPage from './page/result';
 
@@ -11,11 +12,12 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Container maxW={'container.md'} pt={20}>
+      <Container pt={20} maxW={'container.sm'}>
         <Routes>
           <Route exact path="/" element={<HomePage />} />
-          <Route path="/payment" element={<PaymentPage />} />
-          <Route path="/result" element={<ResultPage />} />
+          <Route path="/works" element={<PaymentPage />} />
+          <Route path="/music" element={<ResultPage />} />
+          <Route path='*' element={<NotFoundPage />} />
         </Routes>
       </Container>
     </div>

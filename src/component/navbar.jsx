@@ -52,16 +52,9 @@ const Navbar = () => {
           ml={10}
           mt={{ base: 4, nmd: 0 }}
         >
-          <Link href="/works">
-            Works
-          </Link>
-          <Link href="/music">
-            My favorite music
-          </Link>
-          <Link
-            target="_blank"
-            href="https://github.com/dickyukong121"
-          >
+          <Link href="/works">Works</Link>
+          <Link href="/music">My favorite music</Link>
+          <Link target="_blank" href="https://github.com/dickyukong121">
             My Github
           </Link>
         </Stack>
